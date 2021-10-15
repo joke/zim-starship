@@ -1,2 +1,3 @@
 # zim-starship
-zim module for the starship prompt
+
+[zim module](https://github.com/zimfw/zimfw) for the [starship prompt](https://github.com/starship/starship).
