@@ -1,0 +1,3 @@
+= zim-starship
+
+https://github.com/zimfw/zimfw[zim module] for the https://github.com/starship/starship[starship prompt].
