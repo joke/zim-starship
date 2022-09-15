@@ -8,4 +8,4 @@ local compfile=${0:h}/functions/_starship
 if [[ ! -e $compfile || $compfile -ot $command ]]; then
   $command completions zsh >| $compfile
 fi
-source <($command init zsh --print-full-inits)
+source <($command init zsh --print-full-init)
