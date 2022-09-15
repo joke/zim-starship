@@ -1,6 +1,11 @@
-if (( ${+commands[starship]} )); then
-  if [[ ! -e ${0:h}/starship.zsh || ${0:h}/starship.zsh -ot ${commands[starship]} ]]; then
-    ${commands[starship]} init zsh --print-full-init >| ${0:h}/starship.zsh
-  fi
-  source ${0:h}/starship.zsh
+local command="${commands[starship]:-${commands[asdf]:+$(asdf which starship)}}"
+
+if (( ! ${+command} )); then
+  return 1
 fi
+
+local compfile=${0:h}/functions/_starship
+if [[ ! -e $compfile || $compfile -ot $command ]]; then
+  $command completions zsh >| $compfile
+fi
+source <($command init zsh --print-full-inits)
