@@ -1,11 +1,9 @@
-local command="${commands[starship]:-${commands[asdf]:+$(asdf which starship)}}"
+(( ${+commands[starship]} || ${+commands[asdf]} && ${+functions[_direnv_hook]} )) && () {
 
-if (( ! ${+command} )); then
-  return 1
-fi
+  local command=${commands[starship]:-"$(${commands[asdf]} which starship 2> /dev/null)"}
+  [[ -z $command ]] && return 1
 
-local compfile=${0:h}/functions/_starship
-if [[ ! -e $compfile || $compfile -ot $command ]]; then
-  $command completions zsh >| $compfile
-fi
-source <($command init zsh --print-full-init)
+  local compfile=$1/functions/_starship
+  [[ ! -e $compfile || $compfile -ot $command ]] && $command completion zsh >| $compfile
+
+} ${0:h}
