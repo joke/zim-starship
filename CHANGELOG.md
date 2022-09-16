@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.1.1](https://github.com/joke/zim-starship/compare/v1.1.0...v1.1.1) (2022-09-16)
+
+
+### Bug Fixes
+
+* asdf handling ([818d3d8](https://github.com/joke/zim-starship/commit/818d3d808977a665185c7235a558c176231c4531))
+* init sourcing ([f4a1c7d](https://github.com/joke/zim-starship/commit/f4a1c7df75a05b9a7e381513fa7c9e69d6c95153))
+
 ## [1.1.0](https://github.com/joke/zim-starship/compare/v1.0.0...v1.1.0) (2022-09-15)
 
 
