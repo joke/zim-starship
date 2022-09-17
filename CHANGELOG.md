@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/joke/zim-starship/compare/v1.1.1...v1.2.0) (2022-09-17)
+
+
+### Features
+
+* check dumpfile after completion update ([3ada6b6](https://github.com/joke/zim-starship/commit/3ada6b6f67250a3f3187e772b43778afdf5722b3))
+
 ### [1.1.1](https://github.com/joke/zim-starship/compare/v1.1.0...v1.1.1) (2022-09-16)
 
 
