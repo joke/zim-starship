@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/joke/zim-starship/compare/v1.2.0...v1.3.0) (2023-03-12)
+
+
+### Features
+
+* cache starship initfile ([e9e6055](https://github.com/joke/zim-starship/commit/e9e6055e56a4df59e27c6404ce4a95de94b6092a))
+
+
+### Bug Fixes
+
+* new version detection message ([62928be](https://github.com/joke/zim-starship/commit/62928beafe389169f72ec11d9294f347266bbf1c))
+
 ## [1.2.0](https://github.com/joke/zim-starship/compare/v1.1.1...v1.2.0) (2022-09-17)
 
 
