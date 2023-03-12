@@ -1,3 +1,4 @@
 *.zwc
 *.zwc.old
 starship.zsh
+starship-init.zsh
