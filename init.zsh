@@ -14,7 +14,7 @@
   local compfile=$1/functions/_starship
   if [[ ! -e $compfile || $compfile -ot $command ]]; then
     $command completions zsh >| $compfile
-    zimfw check-dumpfile
+    print -u2 -PR "* Detected a new version 'starship'. Regenerated completions."
   fi
 
   source $initfile
