@@ -10,5 +10,5 @@ permissions:
 
 jobs:
   release:
-    uses: joke/workflows/.github/workflows/zim-release.yml@main
+    uses: joke/workflows/.github/workflows/zim-release.yml@v1.0.0
     secrets: inherit
